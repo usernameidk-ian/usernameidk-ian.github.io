@@ -37,3 +37,10 @@ document.addEventListener('DOMContentLoaded', () => {
     alt = !alt;
   }, 1200);
 });
+// Auto-start music on first click anywhere
+document.addEventListener('click', () => {
+  const bgm = document.getElementById('bgm');
+  if (bgm.paused) {
+    bgm.play().catch(()=>{});
+  }
+}, { once: true });
