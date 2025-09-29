@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Flashing document title
   let alt = false;
   setInterval(() => {
-    document.title = alt ? '⚠ ARG Site ⚠' : 'T7 Style Website';
+    document.title = alt ? '⚠ ARG Site ⚠' : 't7 is a genius';
     alt = !alt;
   }, 1200);
 });
